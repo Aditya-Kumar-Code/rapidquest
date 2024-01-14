@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title:{
+                text: "My First Chart in CanvasJS"              
+            },
+            data: [              
+            {
+                // Change type to "doughnut", "line", "splineArea", etc.
+                type: "column",
+                dataPoints: [
+                    { label: "apple",  y: 10  },
+                    { label: "orange", y: 15  },
+                    { label: "banana", y: 25  },
+                    { label: "mango",  y: 30  },
+                    { label: "grape",  y: 28  }
+                ]
+            }
+            ]
+        });
+        chart.render();
+    }
+    </script>
+</head>
+<body>
+    <div class="row" >
+        <div class="first">
+            <img src="fly.png" id="fly" >
+
+            <img src="search.png" id="searchimage" >
+
+            <img src="home .png" id="homeimage" >
+
+            <img src="listimage1.png" id="listimage1" >
+
+
+            <img src="listimage2.png" id="listimage2" >
+            <img src="profile.png" id="profile" >
+            <img src="notification.png" id="notification" >
+            <img src="logout.png" id="logout" >
+        </div>
+        <div class="second">
+            <div class="seconddiv">
+
+            
+                <img src="image.png" id="secondimage" >
+                <div>
+
+                
+                <h3 id="seconda">Hi Mike,</h3>
+            
+                <p id="secondb">welcome back</p>
+                </div>
+            </div>
+                <h1 id="secondc">Today</h1>
+                <h1 id="secondd">$19,892</h1>
+                <p id="seconde">Account balance</p>
+                <p id="secondf">$4000</p>
+                <p id="secondg">year-to-date contributions</p>
+                <p id="secondh">$1,892</p>
+                <p id="secondi" >Total Interest</p>
+                <button id="secondj">I Want To</button>
+                <h1 id="secondk">Recent Transactions</h1>
+                <p id="secondl">2020-08-07</p>
+                <p id="secondm">Withdrwal Transfer To Bank-XXX11</p>
+                <div>
+                    <hr width="250px" size="2" style="margin-left: 60px;">
+                </div>
+
+                <p id="secondn" >2020-07-21</p>
+
+                <p id="secondo" >Withdrwal Transfer To Bank-XXX11</p>
+                <div style="margin-left: 60px;">
+                    <hr width="250px" size="2">
+                </div>
+                <p id="secondp">2020-07-16</p>
+                <p id="secondq">Withdrwal Transfer To Bank-XXX11</p>
+                <div style="margin-left: 60px;">
+                    <hr width="250px" size="2">
+                </div>
+
+        </div>
+        <div class="third">
+            <p id="thirda">Retirement Income</p>
+            <p id="thirdg">Starting year 2056</p>
+            
+            
+            <div class="m">
+
+                <div class="c">
+                
+                    <p >$300,000</p>
+                    <p>My Goal</p>
+                    <hr width="120px" size="2" style="border-color:blue">
+
+                </div>
+                <div class="c">
+
+                    <p >59% </p>
+                    <p>Goal Achieved</p>
+
+                    <hr width="120px" size="2" style="border-color:blue">
+
+                </div>
+                <div class="c">
+                    <p>$300</p>
+                    <p>Monthly Income</p>
+                    <hr width="120px" size="2" style="border-color:blue">
+
+                </div>
+                
+            </div>
+            <p id="thirdd">Contributions Overtime</p>
+            <div class="v">
+
+            
+                <div class="e"> <span class="dot1"></span>
+                    Employer : K 73,500 </div>
+                <div class="e"><span class="dot2"></span> Employee : K 52,500</div>
+                <div class="e"> <span class="dot3"></span> Total Interest : K 244,313</div>
+
+            </div>
+
+
+
+            <p id="thirde">How Do I compare to my peers </p>
+            <p id="thirdf">These numbers represent current goal requirement</p>
+            <img src="graph.png" style="width:700px;height: 250px;"></img>
+            <div class="k">
+                
+                <label >Age:</label>
+                
+                <select>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                </select>
+                <br>
+                <label >Salary:</label>
+                <select>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                </select>
+                <br>
+                <label>Gender:</label>
+                <select >
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                </select>
+                <div class="pie1" style="--p:60;--b:10px;--c:rgb(63, 232, 44);">78%</div>
+                <div class="pie2" style="--p:60;--b:10px;--c:rgb(52, 237, 27);">95%</div>
+                <div class="pie3" style="--p:60;--b:10px;--c:rgb(135, 240, 23);">68%</div>
+
+
+
+           </div>
+        </div>
+        <div class="fourth">
+            <div class="new" >
+                <h3 id="fourtha">Retirement Strategy</h3>
+                <h3 id="fourthb">Employee Contribution</h3>
+                <input type="range"  min="1" max="100" value="50"  id="fourthc">
+                <h3 id="fourthd">Retirement Age</h3>
+                <input type="range"  min="1" max="100" value="50" id="fourthe">
+                <hr width="80px" size="2" id="fourthhr">
+
+                <h3 id="fourthf">Employee Contribution 8.4%</h3>
+                <h3 id="fourthg">Interest Rate 5%</h3>
+                <button  id="fourthi">Update</button>
+                <p id="fourthj"><a href="https://www.w3schools.com/" >View Help Docs</a></p>
+
+            </div>
+            <div class="last">
+                <p id="fourthk">Are you considering a</p>
+                <h3 id="fourthl">Housing Advance?</h3>
+                <p id="fourthm">Limited time reduced interest.
+
+                </p>
+                <p id="fourthl"><a href="https://www.w3schools.com/" >Learn More</a></p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
